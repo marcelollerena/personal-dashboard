@@ -9,7 +9,7 @@ export function DashboardLayout() {
 
         <main className="flex-1">
           <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col p-4 lg:p-8">
-            <section className="mt-6 flex-1 rounded-2xl border border-white/10 bg-slate-900/60 p-4 shadow-2xl shadow-slate-950/30 sm:p-6 lg:p-8">
+            <section className=" flex-1 rounded-2xl border border-white/10 bg-slate-900/60 p-4 shadow-2xl shadow-slate-950/30 sm:p-6 lg:p-8">
               <Outlet />
             </section>
           </div>

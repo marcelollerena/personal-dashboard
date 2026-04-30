@@ -1,3 +1,7 @@
+import { useCounter } from "../../zustand-example/store/zustand-example-store";
+
 export function HomePage() {
-  return <div>Hola desde home</div>;
+  const { counter } = useCounter();
+
+  return <div>Hola desde home, este es el valor del counter: {counter}</div>;
 }
