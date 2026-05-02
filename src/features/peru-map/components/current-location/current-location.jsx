@@ -1,4 +1,6 @@
+import { LeafIcon } from "lucide-react";
 import { Marker, Popup } from "react-leaflet";
+import { leafIcon } from "./leaf-icon";
 
 const businesses = [
   {
@@ -17,7 +19,11 @@ const businesses = [
 
 export const StoreLocations = () => {
   return businesses.map((business) => (
-    <Marker key={business.id} position={[business.lat, business.lng]}>
+    <Marker
+      key={business.id}
+      position={[business.lat, business.lng]}
+      icon={leafIcon}
+    >
       <Popup>
         <h2 className="font-bold">{business.name}</h2>
       </Popup>
