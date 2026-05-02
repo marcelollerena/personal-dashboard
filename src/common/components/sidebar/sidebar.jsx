@@ -24,6 +24,10 @@ const navigationItems = [
     label: "Rick and Morty",
     to: "/rick-and-morty",
   },
+  {
+    label: "Peruvian map",
+    to: "/peru-map",
+  },
 ];
 
 export default function Sidebar() {

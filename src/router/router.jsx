@@ -10,6 +10,7 @@ import { RickAndMorty } from "../app/rick-and-morty/rick-and-morty";
 import { DashboardLayout } from "../common/layouts/dashboard-layout";
 import { ZustandExample } from "../app/zustand-example/zustand-example";
 import { ProtectedRoute } from "../features/auth/components/protected-route";
+import { PeruMap } from "../app/peru-map/peru-map";
 
 export const router = createBrowserRouter([
   {
@@ -47,10 +48,13 @@ export const router = createBrowserRouter([
             path: "rick-and-morty",
             Component: RickAndMorty,
           },
-
           {
             path: "rick-and-morty/character/:characterId",
             Component: Character,
+          },
+          {
+            path: "peru-map",
+            Component: PeruMap,
           },
         ],
       },
